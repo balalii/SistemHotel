@@ -75,11 +75,11 @@
                                 @if ($kamar->media_path)
                                     <!-- Menampilkan gambar -->
                                     @if (in_array(pathinfo($kamar->media_path, PATHINFO_EXTENSION), ['jpg', 'jpeg', 'png']))
-                                        <img src="{{ asset('storage/' . $kamar->media_path) }}" alt="Media" class="h-auto max-w-full rounded-xl">
+                                        <img src="{{ URL::asset('storage/' . $kamar->media_path) }}" alt="Media" class="h-auto max-w-full rounded-xl">
                                     <!-- Menampilkan video -->
                                     @elseif (in_array(pathinfo($makam->media_path, PATHINFO_EXTENSION), ['mp4', 'mov', 'avi']))
                                         <video autoplay loop class="max-w-full h-auto  rounded-xl">
-                                            <source src="{{ asset('storage/' . $kamar->media_path) }}" type="video/{{ pathinfo($kamar->media_path, PATHINFO_EXTENSION) }}">
+                                            <source src="{{ URL::asset('storage/' . $kamar->media_path) }}" type="video/{{ pathinfo($kamar->media_path, PATHINFO_EXTENSION) }}">
                                             Your browser does not support the video tag.
                                         </video>
                                     @endif

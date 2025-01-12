@@ -6,7 +6,7 @@
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet">
     <title>About</title>
     <link rel="icon" href="images/hotel.ico" />
 </head>
@@ -57,10 +57,10 @@
       </header>
 
       <div class="image-container" id="about">
-        <img src="{{ asset('images/about 1.jpg') }}" alt="Descriptive Alt Text">
+        <img src="{{ URL::asset('images/about 1.jpg') }}" alt="Descriptive Alt Text">
     </div>
       <div class="image-about">
-        <img src="{{ asset('images/about 2.jpg') }}" alt="">
+        <img src="{{ URL::asset('images/about 2.jpg') }}" alt="">
       </div>
       <div class="about-container">
         <h1>Layanan Terbaik</h1>
@@ -178,6 +178,6 @@
     </div>
   </div>
 
-  <script src="{{ asset('js/script.js') }}"></script>
+  <script src="{{ URL::asset('js/script.js') }}"></script>
 </body>
 </html>

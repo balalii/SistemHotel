@@ -59,7 +59,7 @@
                                 
                                 <div class="grid grid-cols-2 space-x-2 border-b border-white pb-8">
                                     <div >
-                                        <img class="rounded-2xl" src="{{ asset('storage/' . $booking->gambar_kamar) }}" alt="product image" />
+                                        <img class="rounded-2xl" src="{{ URL::asset('storage/' . $booking->gambar_kamar) }}" alt="product image" />
                                     </div>
 
                                     <div class="h-full text-white flex items-center">

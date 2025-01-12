@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> 
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet">
     <link
       rel="stylesheet"
       media="screen and (max-width: 768px)"
@@ -99,13 +99,13 @@
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="{{ asset('images/kamar 1.jpeg') }}" alt="Kamar 1" class="kamar-image">
-              <img src="{{ asset('images/kamar 2.jpeg') }}" alt="Kamar 2" class="kamar-image">
-              <img src="{{ asset('images/kamar 3.jpeg') }}" alt="Kamar 3" class="kamar-image">
+              <img src="{{ URL::asset('images/kamar 1.jpeg') }}" alt="Kamar 1" class="kamar-image">
+              <img src="{{ URL::asset('images/kamar 2.jpeg') }}" alt="Kamar 2" class="kamar-image">
+              <img src="{{ URL::asset('images/kamar 3.jpeg') }}" alt="Kamar 3" class="kamar-image">
             </div>
             <div class="swiper-slide">
-              <img src="{{ asset('images/kamar 4.jpg') }}" alt="Kamar 4" class="kamar-image">
-              <img src="{{ asset('images/kamar 5.jpg') }}" alt="Kamar 5" class="kamar-image">
+              <img src="{{ URL::asset('images/kamar 4.jpg') }}" alt="Kamar 4" class="kamar-image">
+              <img src="{{ URL::asset('images/kamar 5.jpg') }}" alt="Kamar 5" class="kamar-image">
             </div>
           </div>
           <!-- Tambahkan navigasi jika diinginkan -->
@@ -247,6 +247,6 @@
 </div>
 
 
-<script src="{{ asset('js/script.js') }}"></script>
+<script src="{{ URL::asset('js/script.js') }}"></script>
   </body>
 </html>
