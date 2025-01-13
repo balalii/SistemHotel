@@ -3,11 +3,9 @@
     "builds": [
         { "src": "/server.php", "use": "vercel-php@0.7.0" }
     ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/server.php"
-        }
+ "routes": [
+        { "src": "/build/(.*)", "dest": "/public/build/" },
+        { "src": "/(.*)", "dest": "/api/index.php" }
     ],
     
     "env": {

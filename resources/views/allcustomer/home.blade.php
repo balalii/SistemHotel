@@ -95,13 +95,14 @@
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="images/kamar1.jpeg" alt="Kamar 1" class="kamar-image">
-                        <img src="url('{{asset('assets/images/kamar1.jpeg')}})" alt="Kamar 2" class="kamar-image">
+                        <img src="{{ asset('images/kamar1.jpeg') }}" alt="Kamar 1" class="kamar-image">
+                        <img src="{{ asset('images/kamar 2.jpeg') }}" alt="Kamar 2" class="kamar-image">
                         <img src="{{ asset('images/kamar 3.jpeg') }}" alt="Kamar 3" class="kamar-image">
                     </div>
                     <div class="swiper-slide">
                         <img src="{{ asset('images/kamar 4.jpg') }}" alt="Kamar 4" class="kamar-image">
-                        <img src="{{ asset('images/kamar 5.jpg') }}" alt="Kamar 5" class="kamar-image">
+                        <img src="{{ asset('images/kamar 2.jpeg') }}" alt="Kamar 2" class="kamar-image">
+                        <img src="{{ asset('images/kamar 3.jpeg') }}" alt="Kamar 3" class="kamar-image">
                     </div>
                 </div>
                 <!-- Tambahkan navigasi jika diinginkan -->
