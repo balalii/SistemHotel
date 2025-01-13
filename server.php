@@ -1,27 +1,35 @@
 <?php
 
 /**
- * Here is the serverless function entry
- * for deployment with Vercel.
+ * Serverless function entry for deployment with Vercel.
+ * Supports Laravel with Vite in production.
  */
 
+// Decode the requested URI
 $uri = urldecode(
     parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) ?? ''
 );
 
-if ($uri !== '/' && file_exists($file = __DIR__.'/public'.$uri)) {
-    header('Content-type: '.get_mime_type($file).'; charset: UTF-8;');
-    echo require $file;
-} else {
-    require_once __DIR__.'/public/index.php';
+// Set the public path
+$publicPath = __DIR__ . '/public';
+
+// Handle Vite static files (like CSS, JS, images)
+if ($uri !== '/' && file_exists($file = $publicPath . $uri)) {
+    header('Content-Type: ' . get_mime_type($file) . '; charset=UTF-8;');
+    readfile($file);
+    exit;
 }
 
+// Fallback to the index.php file for Laravel routing
+require_once $publicPath . '/index.php';
 
-
+/**
+ * Get MIME type of a file based on its extension.
+ */
 function get_mime_type($filename) {
-    $extension = strtolower(pathinfo($filename)['extension']);
+    $extension = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
 
-    $mimes = array(
+    $mimes = [
         'txt' => 'text/plain',
         'html' => 'text/html',
         'php' => 'text/html',
@@ -54,10 +62,7 @@ function get_mime_type($filename) {
         'woff' => 'application/x-woff',
         'woff2' => 'font/woff2',
         'otf' => 'font/otf',
-    );
+    ];
 
-    if (isset($mimes[$extension])) {
-        return $mimes[$extension];
-    }
-    return 'application/octet-stream';
+    return $mimes[$extension] ?? 'application/octet-stream';
 }
