@@ -95,7 +95,7 @@
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="{{ asset('images/kamar1.jpeg') }}" alt="Kamar 1" class="kamar-image">
+                        <img src="/images/kamar1.jpeg" alt="Kamar 1" class="kamar-image">
                         <img src="{{ asset('images/kamar 2.jpeg') }}" alt="Kamar 2" class="kamar-image">
                         <img src="{{ asset('images/kamar 3.jpeg') }}" alt="Kamar 3" class="kamar-image">
                     </div>
