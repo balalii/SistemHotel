@@ -18,7 +18,6 @@ if ($uri !== '/' && file_exists($file = __DIR__.'/public'.$uri)) {
 
 
 
-
 function get_mime_type($filename) {
     $extension = strtolower(pathinfo($filename)['extension']);
 
