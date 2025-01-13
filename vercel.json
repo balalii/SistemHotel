@@ -6,10 +6,23 @@
     "functions": {
         "api/index.php": { "runtime": "vercel-php@0.6.0" }
     },
-    "routes": [{
-        "src": "/(.*)",
-        "dest": "/api/index.php"
-    }],
+"builds": [
+        {
+            "src": "vite.config.js",
+            "use": "@vercel/static-build"
+        },
+        {
+            "src": "artisan",
+            "use": "@vercel/php"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/public/index.php"
+        }
+    ],
+    "buildCommand": "npm install && npm run build && composer install --optimize-autoloader --no-dev",
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
