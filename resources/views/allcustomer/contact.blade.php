@@ -5,7 +5,7 @@
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
-    <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <title>Contact</title>
     <link rel="icon" href="images/hotel.ico" />
  </head>
@@ -217,6 +217,6 @@
         COPYRIGHT AG
     </div>
   </div>
-  <script src="{{ URL::asset('js/script.js') }}"></script>
+  <script src="{{ asset('js/script.js') }}"></script>
  </body>
 </html>

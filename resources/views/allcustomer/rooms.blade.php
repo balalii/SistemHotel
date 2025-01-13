@@ -9,7 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
     <link rel="icon" href="images/hotel.ico" />
-    <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -59,14 +59,14 @@
 
     <div class="rooms-container" id="rooms">
         <div class="card-roms1">
-            <img src="{{ URL::asset('images/rooms 1.jpg') }}" alt="Kamar Keluarga">
+            <img src="{{ asset('images/rooms 1.jpg') }}" alt="Kamar Keluarga">
         </div>
         <div class="card-teks1">
             <h2>Kamar Keluarga</h2>
             <p>Memberikan layanan terbaik sampai anda mendapatkan apartemen sesuai dengan impian</p>
         </div>
         <div class="card-roms2">
-            <img src="{{ URL::asset('images/rooms 2.jpeg') }}" alt="Kamar Deluxe">
+            <img src="{{ asset('images/rooms 2.jpeg') }}" alt="Kamar Deluxe">
         </div>
         <div class="card-teks2">
             <h2>Kamar Deluxe</h2>
@@ -74,7 +74,7 @@
         </div>
 
         <div class="card-roms3">
-            <img src="{{ URL::asset('images/rooms 3.jpg') }}" alt="Kamar Premium">
+            <img src="{{ asset('images/rooms 3.jpg') }}" alt="Kamar Premium">
         </div>
         <div class="card-teks3">
             <h2>Kamar Premium</h2>
@@ -114,7 +114,7 @@
     </div>
 
 
-    <script src="{{ URL::asset('js/script.js') }}"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
 </body>
 
 </html>

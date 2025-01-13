@@ -6,7 +6,7 @@
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
-    <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <title>Services</title>
     <link rel="icon" href="images/hotel.ico" />
 </head>
@@ -84,12 +84,12 @@
           <h1>GALERI RUANGAN APARTEMEN TERBAIK</h1>
           <h2>Galeri Apartemen Di Indonesia</h2>
           <div class="gallery-grid">
-            <img src="{{ URL::asset('images/services kamar 1.jpg') }}" alt="Apartemen 1">
-            <img src="{{ URL::asset('images/services kamar 2.jpg') }}" alt="Apartemen 2">
-            <img src="{{ URL::asset('images/services kamar 3.jpg') }}" alt="Apartemen 3">
-            <img src="{{ URL::asset('images/services kamar 1.jpg') }}" alt="Apartemen 4">
-            <img src="{{ URL::asset('images/services kamar 2.jpg') }}" alt="Apartemen 5">
-            <img src="{{ URL::asset('images/services kamar 3.jpg') }}" alt="Apartemen 6">
+            <img src="{{ asset('images/services kamar 1.jpg') }}" alt="Apartemen 1">
+            <img src="{{ asset('images/services kamar 2.jpg') }}" alt="Apartemen 2">
+            <img src="{{ asset('images/services kamar 3.jpg') }}" alt="Apartemen 3">
+            <img src="{{ asset('images/services kamar 1.jpg') }}" alt="Apartemen 4">
+            <img src="{{ asset('images/services kamar 2.jpg') }}" alt="Apartemen 5">
+            <img src="{{ asset('images/services kamar 3.jpg') }}" alt="Apartemen 6">
           </div>
         </section>
       </div>
@@ -125,6 +125,6 @@
     </div>
   </div>
 
-  <script src="{{ URL::asset('js/script.js') }}"></script>
+  <script src="{{ asset('js/script.js') }}"></script>
 </body>
 </html>

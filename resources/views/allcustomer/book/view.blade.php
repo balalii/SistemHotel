@@ -12,7 +12,7 @@
                     <div class="rounded-2xl" style="background-color: #262626;">
                         <div class="p-8 content-start">
                             <div>
-                                <img class="h-auto rounded-lg" src="{{ URL::asset('storage/' . $kamar->media_path) }}" alt="">
+                                <img class="h-auto rounded-lg" src="{{ asset('storage/' . $kamar->media_path) }}" alt="">
                             </div>
                             
                         </div>

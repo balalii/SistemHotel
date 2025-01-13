@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css" />
     <script src="https://kit.fontawesome.com/d2f5c4b57c.js" crossorigin="anonymous"></script>
 </head>
@@ -95,13 +95,13 @@
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="{{ URL::asset('images/kamar1.jpeg') }}" alt="Kamar 1" class="kamar-image">
-                        <img src="{{ URL::asset('images/kamar 2.jpeg') }}" alt="Kamar 2" class="kamar-image">
-                        <img src="{{ URL::asset('images/kamar 3.jpeg') }}" alt="Kamar 3" class="kamar-image">
+                        <img src="{{ asset('images/kamar1.jpeg') }}" alt="Kamar 1" class="kamar-image">
+                        <img src="{{ asset('images/kamar 2.jpeg') }}" alt="Kamar 2" class="kamar-image">
+                        <img src="{{ asset('images/kamar 3.jpeg') }}" alt="Kamar 3" class="kamar-image">
                     </div>
                     <div class="swiper-slide">
-                        <img src="{{ URL::asset('images/kamar 4.jpg') }}" alt="Kamar 4" class="kamar-image">
-                        <img src="{{ URL::asset('images/kamar 5.jpg') }}" alt="Kamar 5" class="kamar-image">
+                        <img src="{{ asset('images/kamar 4.jpg') }}" alt="Kamar 4" class="kamar-image">
+                        <img src="{{ asset('images/kamar 5.jpg') }}" alt="Kamar 5" class="kamar-image">
                     </div>
                 </div>
                 <!-- Tambahkan navigasi jika diinginkan -->
@@ -243,7 +243,7 @@
     </div>
 
 
-    <script src="{{ URL::asset('js/script.js') }}"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
 </body>
 
 </html>
