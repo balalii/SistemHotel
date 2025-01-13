@@ -10,7 +10,8 @@
             "dest": "/server.php"
         }
     ],
-    
+        "buildCommand": "vite build",
+    "outputDirectory": "public",
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
