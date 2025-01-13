@@ -1,15 +1,21 @@
+
+
 {
     "version": 2,
-    "builds": [
-        { "src": "/server.php", "use": "vercel-php@0.7.0" }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/server.php"
-        }
-    ],
+      "framework": null,
+    "functions": {
+        "api/index.php": { "runtime": "vercel-php@0.6.0" }
+    },
+    "routes": [{
+        "src": "/(.*)",
+        "dest": "/api/index.php"
+    }],
+       "buildCommand": "npm install && npm run build && composer install --optimize-autoloader--no-dev",
     "env": {
+        "APP_ENV": "production",
+        "APP_DEBUG": "true",
+        "APP_URL": "https://sistem-hotel-zeta.vercel.app",
+        "APP_KEY": "base64:TGaVaXwhWgjn9akhE4SCSIjGG/cQqvICUQ+PgLA3Bs0=",
         "ASSET_URL": "/",
         "SESSION_DRIVER": "cookie",
         "CACHE_DRIVER": "database",
