@@ -1,16 +1,14 @@
-
-
 {
     "version": 2,
-      "framework": null,
-    "functions": {
-        "api/index.php": { "runtime": "vercel-php@0.6.0" }
-    },
-    "routes": [{
-        "src": "/(.*)",
-        "dest": "/api/index.php"
-    }],
-       "buildCommand": "npm install && npm run build && composer install --optimize-autoloader--no-dev",
+    "builds": [
+        { "src": "/server.php", "use": "vercel-php@0.7.0" }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/server.php"
+        }
+    ],
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
